@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    tools:context="com.example.kunal.firebasenotification.MainActivity">
+
+
+    <Button
+        android:id="@+id/noti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send noti"
+        android:onClick="sendNoti"
+        />
+
+    <TextView
+        android:id="@+id/Showdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/done"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="done"
+        android:layout_below="@id/noti"
+        android:onClick="done"
+        />
+
+
+    <Button
+        android:id="@+id/asus"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send to asus"
+        android:layout_below="@id/done"
+        android:onClick="asus"
+        />
+
+
+    <Button
+        android:id="@+id/intex"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send to intex"
+        android:layout_below="@id/asus"
+        android:onClick="intex"
+        />
+
+
+    <Button
+        android:id="@+id/both"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send to both"
+        android:layout_below="@id/intex"
+        android:onClick="both"
+        />
+
+
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/both"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/reg_asus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register asus"
+            android:onClick="reg_asus"
+            />
+
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/reg_asus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="register intex"
+            android:onClick="reg_intex"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
